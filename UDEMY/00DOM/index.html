@@ -1,0 +1,73 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="css/style.css">
+    <title>DOM</title>
+    <style>
+        .azul{
+            color: blue;
+        }
+    </style>
+</head>
+<body>
+<h1 id="titulo" class="azul">ejemplo DOM con js</h1>
+<p id="parrafo" class="azul">Saludos</p>
+<p id="parrafo2" class="azul"> soy el parrafo 2</p>
+
+
+
+
+
+    <script>
+        console.log("desde adentro")
+        const titulo = document.querySelector("#titulo");
+        console.log("valor del titulo: " + titulo)
+        titulo.innerHTML = "nuevo titulo desde inerHTML"
+
+        const parrafo = document.querySelector("#parrafo");
+        console.log("valor cabecer: " + parrafo)
+        parrafo.innerHTML = "nuevo parrafo desde innerHTML"
+
+
+        // tagName
+
+        /*
+        const parrafos = document.getElementsByTagName("p")
+        console.log(`numero de parrafos: ${parrafos.length}`)
+
+        for (let i=0; i < parrafos.length; i++){
+            console.log(`i: ${i}, ${parrafos[i].innerHTML}`);
+        }
+        */
+
+        const parrafos = document.getElementsByClassName("azul");
+        console.log(parrafos)
+
+        for(let i = 0; i < parrafos.length; i++){
+            console.log(`i: ${i} - ${parrafos[i].innerHTML}`)
+        }
+
+
+        
+        // const titulo1 = document.querySelector("#titulo");
+        // titulo1.textContent = "cambio desde js uuuuu"
+
+        // const parrafo2 = document.getElementById("parrafo2").innerHTML;
+        // console.log(parrafo2)
+
+       
+
+        // parrafo3 = document.getElementById("parrafo2")
+        // parrafo3.textContent= "cambio de parrafo 2"
+
+
+    </script>
+    
+
+
+    <!-- <script src="js/app.js"></script> -->
+</body>
+</html>

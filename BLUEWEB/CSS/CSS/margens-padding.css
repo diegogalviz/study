@@ -1,0 +1,18 @@
+h1 {
+    background: #EC994B;
+    margin-top: 100px;
+    margin-bottom: 200px;
+    margin-right: 200px;
+    border: 3px solid ;
+    padding: 20px;
+}
+
+p {
+    background: #947EC3;
+    margin : 100px;
+}
+
+article {
+    margin: 100px 200px;
+    background: rgba(204, 37, 37, 0.23);
+}

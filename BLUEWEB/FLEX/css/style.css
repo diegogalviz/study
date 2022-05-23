@@ -1,0 +1,37 @@
+.container{
+    width: 80%;
+    height: 500px;
+    background: #e16a0c;
+    margin: 30px auto;
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    /*justify-content: space-around;*/
+    /*align-items: stretch;*/
+    /*align-content: space-around;*/
+
+
+}
+
+.hijo{
+    background: #17b01a;
+    width: 200px;
+    /*height: 100px;*/
+    margin: 30px;
+    text-align: center;
+    padding: 20px;
+    color: white;
+    font-size: 40px;
+    border-radius: 5px;
+    /*flex-grow: 1;*/
+    /*flex-shrink: 0;*/
+    flex: 1 1 auto;
+    /*order:2;*/
+
+}
+
+.otro{
+    /*order:1;*/
+    align-self: stretch;
+    height: auto;
+}

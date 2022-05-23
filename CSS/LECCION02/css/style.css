@@ -1,0 +1,35 @@
+*{
+    margin: 0px;
+    padding: 0px;
+
+}
+
+#contenedor {
+    width: 150px;
+    height: 150px;
+    background-color: #f00;
+
+    /*overflow: hidden;*/
+
+
+
+}
+
+#contenido {
+    width: 100px;
+    height: 100px;
+    background-color: rgba(32,172,70,0.5);
+    padding: 20px;
+
+
+}
+
+#dos {
+    width: 200px;
+    height: 200px;
+    background-color: #f00;
+    margin: 30px;
+    border: solid 10px #0ff;
+    border-right: solid 8px;
+
+}

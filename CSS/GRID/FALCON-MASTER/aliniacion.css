@@ -1,0 +1,32 @@
+.container{
+    display: grid;
+    grid-gap: 20px;
+    grid-template-columns: repeat(3,1fr);
+    grid-template-rows: repeat(3,200px);
+
+    /*alinicion horizontal*/
+    /*valores que puedes usar: auto | star | center | end | strech*/
+    justify-items: stretch;
+
+    /*aliniacion vertical*/
+    /*valores que puedes usar: auto | star | center | end | strech*/
+    align-items: start;
+
+}
+
+.container .item {
+    background: #ff8000;
+
+    /*alinicion horizontal*/
+    /*se usa para que respete el gap defido en el grid*/
+    justify-self: stretch;
+
+    /*si no quieres respetar el gap se usa width*/
+
+    /*aliniacion vertical*/
+    /*se usa para que respete el gap defido en el grid*/
+    align-self: end;
+
+    /*si no quieres respetar el gap se usa hight*/
+
+}
